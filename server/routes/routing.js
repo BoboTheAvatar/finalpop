@@ -26,7 +26,7 @@ const j=new changedestinationApi.changedestinationclass();
 const k=new changestatusApi.changestatusclass();
 
 //router.get('/parcels',AllParcelsApi.getallparcels); //Done Testing
-router.get('/parcels', c.getallparcels);
+router.get('/parcels', checkToken, c.getallparcels);
 //router.get('/parcels/:parcelId',IdParcelsApi.getidparcels); //Done Testing
 router.get('/parcels/:parcelId', checkToken, f.getidparcels);
 //router.get('/users/:Id/parcels',AllIdParcelsApi.getallidparcels; //Done Testing
