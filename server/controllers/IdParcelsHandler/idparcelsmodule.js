@@ -21,7 +21,10 @@ export class idparcelsclass{
                                     port: 7777,
                                  });
 
-            const sender= request.params.parcelId;
+            const sender="";
+
+            if(request.params.parcelId){ sender=request.params.parcelId;};
+            
             console.log('SELECT * FROM public."order" WHERE "id"=\''+sender+'\'');
             
             pool.query('SELECT * FROM public."order" WHERE id=\''+sender+'\'', (error, results) => {

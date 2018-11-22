@@ -4,7 +4,7 @@ const request=require('request');
 
 describe("Cancel ID parcel Test ", () => {
     
-    let url = "http://localhost:8080/api/v1/parcels/id1/cancel", result="forbidden";
+    let url = "http://localhost:8080/api/v1/parcels/id1/cancel", result="Forbidden";
     
     
 
@@ -17,7 +17,7 @@ describe("Cancel ID parcel Test ", () => {
 
     it("returns the expected result",(done) =>{
       request.put(url, (error, response, body) =>{
-        expect(body).toEqual(JSON.stringify(result));
+        expect(body).toEqual(result);
         done();
       });
     });

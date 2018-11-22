@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">70.59% </span>
+        <span class="strong">17.65% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>12/17</span>
+        <span class='fraction'>3/17</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">25% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>1/4</span>
+        <span class='fraction'>0/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">66.67% </span>
+        <span class="strong">33.33% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>2/3</span>
+        <span class='fraction'>1/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">76.92% </span>
+        <span class="strong">23.08% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>10/13</span>
+        <span class='fraction'>3/13</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -123,7 +123,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -137,33 +137,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -185,7 +185,7 @@ export class addidparcelsclass{
     addidparcels(request,response){
 &nbsp;
 &nbsp;
-              const newdata={
+              const newdata=<span class="cstat-no" title="statement not covered" >{</span>
                                         "Id":"id151",
                                         "Info":"Headphone",
                                         "Weight":"124",
@@ -199,19 +199,19 @@ export class addidparcelsclass{
                                         "Status":"In Progress"           
                             };
 &nbsp;
-            let filedata=fs.readFileSync("./server/models/jsonfile.json", <span class="fstat-no" title="function not covered" >(</span>err, data) =&gt; {
+            let filedata=<span class="cstat-no" title="statement not covered" >fs.readFileSync("./server/models/jsonfile.json", <span class="fstat-no" title="function not covered" >(</span>err, data) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >              if (err) { <span class="cstat-no" title="statement not covered" >return err;}</span></span>
               else{<span class="cstat-no" title="statement not covered" >return data;}</span>
             });
 &nbsp;
-            let jsondata=JSON.parse(filedata), id1 =newdata.Sender, t=newdata.Id;
+            let jsondata=<span class="cstat-no" title="statement not covered" >JSON.parse(filedata), id1 =<span class="cstat-no" title="statement not covered" >newdata.Sender, t=<span class="cstat-no" title="statement not covered" >newdata.Id;</span></span></span>
 &nbsp;
             //console.log(id1+" &gt;&gt; "+t);
 &nbsp;
             //console.log(jsondata.users[id1].Orders);
 &nbsp;
             //jsondata.users[id1].Orders.NewPropertyName=t;
-            jsondata.users[id1].Orders[t]=newdata;
+<span class="cstat-no" title="statement not covered" >            jsondata.users[id1].Orders[t]=newdata;</span>
 &nbsp;
 &nbsp;
 &nbsp;
@@ -219,13 +219,13 @@ export class addidparcelsclass{
             //console.log(jsondata.users[id1].Orders[t]);
             //console.log(jsondata.users[id1]);
 &nbsp;
-            fs.writeFile('./server/models/jsonfile.json', JSON.stringify(jsondata), (err) =&gt; {
-                           <span class="missing-if-branch" title="if path not taken" >I</span>if (err) <span class="cstat-no" title="statement not covered" >throw err;</span>
+<span class="cstat-no" title="statement not covered" >            fs.writeFile('./server/models/jsonfile.json', JSON.stringify(jsondata), <span class="fstat-no" title="function not covered" >(</span>err) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                           if (err) <span class="cstat-no" title="statement not covered" >throw err;</span></span>
                               //console.log('The file has been saved!');
                       });
 &nbsp;
 &nbsp;
-            response.setHeader('Content-Type','application/plain');
+<span class="cstat-no" title="statement not covered" >            response.setHeader('Content-Type','application/plain');</span>
 <span class="cstat-no" title="statement not covered" >            response.send("Done");         </span>
 	   
 &nbsp;
@@ -238,7 +238,7 @@ export class addidparcelsclass{
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Nov 22 2018 23:14:23 GMT+0200 (Egypt Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Nov 23 2018 00:00:55 GMT+0200 (Egypt Standard Time)
 </div>
 </div>
 <script src="..\..\..\..\prettify.js"></script>

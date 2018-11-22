@@ -10,7 +10,7 @@ describe("Select All ID Parcels Test ", () => {
 
     //let apifn=new AllIdParcelsApi.allidparcelsclass();
     
-    let result="forbidden";
+    let result="Forbidden";
 
     it("returns status 403", (done)=> {
       request(url, (error, response, body) =>{
@@ -22,7 +22,7 @@ describe("Select All ID Parcels Test ", () => {
 
     it("returns the expected result",(done) =>{
       request(url, (error, response, body) =>{
-        expect(body).toEqual(JSON.stringify(result));
+        expect(body).toEqual(result);
         done();
       });
     });

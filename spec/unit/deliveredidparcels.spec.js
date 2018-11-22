@@ -17,7 +17,7 @@ describe("Change status of a ID parcel Test ", () => {
 
     it("returns the expected result",(done) =>{
       request.put(url, (error, response, body) =>{
-        expect(body).toEqual(JSON.stringify(result));
+        expect(body).toEqual(result);
         done();
       });
     });

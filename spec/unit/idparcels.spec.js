@@ -17,7 +17,7 @@ describe("Select One ID parcels Test ", () => {
 
     it("returns the expected result", (done) =>{
       request(url, (error, response, body) =>{
-        expect(body).toEqual(JSON.stringify(result));
+        expect(body).toEqual(result);
         done();
       });
     });
