@@ -17,7 +17,7 @@ describe("Select All Parcels Test ", () => {
 
     it("returns the expected result", (done)=> {
       request(url, (error, response, body)=> {
-        //expect(body).toBeUndefined();
+        expect(body).toBeUndefined();
         done();
       });
     });
