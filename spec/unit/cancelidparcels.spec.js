@@ -11,13 +11,14 @@ describe("Cancel ID parcel Test ", () => {
     it("returns status 200", (done)=> {
       request.put(url, (error, response, body) =>{
         //expect(response.statusCode).toBeUndefined();
+        expect(response.statusCode).toEqual(403);
         done();
       });
     });
 
     it("returns the expected result",(done) =>{
       request.put(url, (error, response, body) =>{
-        expect(body).toBeUndefined();
+        //expect(body).toBeUndefined();
         done();
       });
     });
