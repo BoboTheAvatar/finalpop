@@ -36,9 +36,9 @@ router.put('/parcels/:Id/cancel', checkToken, d.cancelidparcels);
 //router.post('/parcels',AddIdParcelsApi.addidparcels); // Testing>>
 router.post('/parcels', checkToken, b.addidparcels);
 //router.put('/parcels/:Id/location',LocationIdParcelsApi.locationidparcels); //Testing>>
-router.put('/parcels/:Id/location', g.locationidparcels);
+router.put('/parcels/:Id/location', checkToken, g.locationidparcels);
 //router.put('/parcels/:Id/delivered',DeliveredIdParcelsApi.deliveredidparcels); //Testing>>
-router.put('/parcels/:Id/delivered',e.deliveredidparcels);
+router.put('/parcels/:Id/delivered',checkToken, e.deliveredidparcels);
 
 //Sign Up
 router.post('/auth/signup', h.addidaccount);
